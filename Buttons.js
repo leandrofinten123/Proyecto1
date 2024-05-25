@@ -30,6 +30,6 @@ fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
             console.log(data);
             const contenidoHeader = document.querySelector('.titulo__1');
             contenidoHeader.innerHTML = `
-            <img src="${data.imagen1}" alt ="">
+            <img class="logo__1" src="${data.imagen1}" alt ="">
              `;})
           .catch(error => console.error('Error al leer el archivo JSON:', error));
