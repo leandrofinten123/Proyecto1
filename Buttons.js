@@ -28,7 +28,7 @@ fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
           .then(response => response.json())
           .then(data => {
             console.log(data);
-            const contenidoHeader = document.getElementById('.titulo__1');
+            const contenidoHeader = document.querySelector('.titulo__1');
             contenidoHeader.innerHTML = `
             <img src="${data.imagen1}" alt ="">
              `;})
