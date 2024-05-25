@@ -26,7 +26,8 @@ boton2Cerrar.addEventListener("click", function() {
 
 fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1')
             .then(response => response.json())
-            .then(data => {
+            . console.log(response);
+            then(data => {
                 const contenidoHeader = document.getElementById('titulo__1');
                 contenidoHeader.innerHTML = `
                 <img src="${data.imagen1}" alt ="">
