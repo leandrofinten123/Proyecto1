@@ -24,7 +24,7 @@ boton2Cerrar.addEventListener("click", function() {
   menu2.classList.remove("mostrar");
 });
 
-fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1')
+fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
             .then(response => response.json())
             . console.log(response);
             then(data => {
