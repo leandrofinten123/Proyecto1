@@ -24,7 +24,7 @@ boton2Cerrar.addEventListener("click", function() {
   menu2.classList.remove("mostrar");
 });
 
-fetch('https://my-json-server.typicode.com/juan123/mi-json-api/persona')
+fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1')
             .then(response => response.json())
             .then(data => {
                 const contenidoHeader = document.getElementById('titulo__1');
