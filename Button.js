@@ -25,11 +25,22 @@ boton2Cerrar.addEventListener("click", function() {
 });
 
 fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
-          .then(response => response.json())
-          .then(data => {
-            console.log(data);
-            const contenidoHeader = document.querySelector('.titulo__1');
-            contenidoHeader.innerHTML = `
-            <img class="logo__1" src="${data.imagen1}" alt ="">
-             `;})
-          .catch(error => console.error('Error al leer el archivo JSON:', error));
+.then(response => response.json())
+.then(data => {
+console.log(data);
+const contenidoHeader = document.querySelector('.titulo__1');
+contenidoHeader.innerHTML = `
+<img class="logo__1" src="${data.imagen1}" alt ="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
+
+
+fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
+.then(response => response.json())
+.then(data => {
+console.log(data);
+const contenidoHeader = document.querySelector('.titulo__2');
+contenidoHeader.innerHTML = `
+<img class="logo__1" src="${data.imagen1}" alt ="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
